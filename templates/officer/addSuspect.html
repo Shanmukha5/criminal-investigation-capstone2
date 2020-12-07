@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Add suspect</title>
+</head>
+<body>
+	<h1>Add Suspect</h1>
+	<form method="POST" action="" enctype="multipart/form-data">
+		{% csrf_token %}
+		Suspect ID: <input type="text" name="id"><br>
+		Name: <input type="text" name="name"><br>
+		Image: <input type="file" name="image"><br>
+		Phone Number: <input type="text" name="phone_number"><br>
+		Age: <input type="int" name="age"><br>
+		Gender: <input type="text" name="gender"><br>
+		Relation: <input type="text" name="relation"><br>
+		description: <textarea name="description"></textarea><br>
+		Weight: <input type="int" name="weight"><br>
+		Case ID: <input type="int" name="case_id"><br>
+		<button>Add Suspect</button>
+	</form>
+
+</body>
+</html>
